@@ -2,36 +2,21 @@ import Image from "next/image";
 
 const Sobre = () => {
   return (
-    <section className="relative w-full md:h-screen py-24 md:py-32 flex flex-col items-center justify-center">
+    <section className="relative w-full min:h-screen py-24 md:py-48 flex flex-col items-center justify-center">
       <Image
         src="/images/backgrounds/BG 6.png"
         alt="Plano de fundo da seção sobre o evento"
         fill
         priority
-        className="object-cover"
+        className="object-cover overflow-hidden"
       />
 
-      <div className="relative flex flex-col items-center justify-center px-8 md:px-12 w-full h-auto gap-12">
-        <div className="text-center text-[#0c0c0b] flex flex-col gap-12 max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-6xl font-bold">Sobre o evento</h2>
-          <p className="text-lg md:text-2xl font-normal leading-relaxed text-left">
-            Na sua 2ª edição, o <strong>Yellow Summit</strong> reúne empresários e profissionais para explorar como fortalecimento de marca,
-            comunicação integrada e estratégia digital estão transformando
-            negócios no Brasil. É um dia de{" "}
-            <strong>aprendizado, conexões e inovação</strong> no Centro de
-            Inovação de Alagoas.
-          </p>
-        </div>
-
-        <Image
-          src="/images/elementos/Botão dobra 2.png"
-          alt="Botão para participação no evento Yellow Summit"
-          width={1235}
-          height={174}
-          priority
-          className="w-full max-w-3xl"
-        />
+      <div className="relative items-center text-center justify-center px-8 md:px-18 w-full gap-8 text-[#ebaa25] flex flex-col max-w-3xl">
+          <p className="text-3xl md:text-4xl font-bold">+350 participantes em 2024</p>
+          <p className="text-4xl md:text-5xl text-white font-bold">80% avaliaram o evento como excelente</p>
+          <p className="text-3xl md:text-4xl font-bold">Negócios e parcerias gerados a partir do networking no evento</p>
       </div>
+
     </section>
   );
 };

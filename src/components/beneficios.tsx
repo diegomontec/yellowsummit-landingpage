@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Beneficios = () => {
   return (
-    <section className="relative w-full md:h-screen py-24 md:py-32 flex flex-col items-center justify-center">
+    <section className="relative w-full min:h-screen py-24 md:py-32 flex flex-col items-center justify-center">
       <Image
         src="/images/backgrounds/BG 3.png"
         alt="Plano de fundo da seção sobre o evento"

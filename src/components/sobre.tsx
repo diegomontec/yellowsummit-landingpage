@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Sobre = () => {
   return (
-    <section className="relative w-full md:h-screen py-24 md:py-32 flex flex-col items-center justify-center">
+    <section className="relative w-full min-h-[70vh] md:h-screen  flex flex-col items-center justify-center">
       <Image
         src="/images/backgrounds/BG 2.png"
         alt="Plano de fundo da seção sobre o evento"

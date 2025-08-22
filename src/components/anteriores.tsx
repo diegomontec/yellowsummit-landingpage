@@ -2,22 +2,22 @@ import Image from "next/image";
 
 const pessoas = [
   {
-    src: "/images/elementos/Pessoas (1).png",
+    src: "/images/elementos/yellowsummit02.jpg",
     alt: "Diretora comercial",
   },
   {
-    src: "/images/elementos/Pessoas (2).png",
+    src: "/images/elementos/yellowsummit01.jpg",
     alt: "Diretor de marketing",
   },
   {
-    src: "/images/elementos/Pessoas (3).png",
+    src: "/images/elementos/yellowsummit03.jpg",
     alt: "CEO e Cofundador - build",
   },
 ];
 
 const Anteriores = () => {
   return (
-    <section className="relative w-full md:h-screen py-24 md:py-32 flex flex-col items-center justify-center">
+    <section className="relative w-full min:h-screen py-24 md:py-32 flex flex-col items-center justify-center">
       <Image
         src="/images/backgrounds/BG 5.png"
         alt="Plano de fundo da seção sobre o evento"
@@ -35,7 +35,7 @@ const Anteriores = () => {
             <strong>podem mudar o futuro do seu negócio</strong>
           </p>
         </div>
-        <div className="relative flex flex-col md:flex-row gap-8 px-6 md:px-12 w-full max-w-7xl items-center justify-center">
+        <div className="relative flex flex-col md:flex-row gap-4 px-6 md:px-12 max-w-8xl items-center justify-center">
           {pessoas.map((pessoa, index) => (
             <div key={index} className="w-full">
               <Image

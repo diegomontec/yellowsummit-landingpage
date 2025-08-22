@@ -1,7 +1,7 @@
 import Image from "next/image";
 const Hero = () => {
   return (
-    <div className="relative w-full md:h-screen sm:h-screen py-24 md:py-32">
+    <div className="relative w-full min-h-screen py-24 md:py-32">
       <Image
         src="/images/backgrounds/BG 1.png"
         alt="background hero"
