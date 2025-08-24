@@ -17,7 +17,7 @@ const pessoas = [
 
 const Anteriores = () => {
   return (
-    <section className="relative w-full min:h-screen py-24 md:py-32 flex flex-col items-center justify-center">
+    <section className="relative w-full min:h-screen py-24 flex flex-col items-center justify-center">
       <Image
         src="/images/backgrounds/BG 5.png"
         alt="Plano de fundo da seção sobre o evento"
@@ -26,16 +26,19 @@ const Anteriores = () => {
         className="object-cover"
       />
 
-      <div className="relative flex flex-col items-center justify-center px-8 md:px-12 w-full h-auto gap-12">
-        <div className="text-center text-white flex flex-col gap-12 max-w-3xl mx-auto">
-          <p className="text-lg md:text-3xl font-normal leading-relaxed text-center">
-            Mais que um evento, o <strong>Yellow Summit</strong> é uma
-            experiência: credenciamento por reconhecimento facial, estrutura
-            moderna, espaço de interação e momentos para gerar conexões que
-            <strong>podem mudar o futuro do seu negócio</strong>
+      <div className="relative flex flex-col items-center justify-center px-8 md:px-12 w-full gap-24">
+        <div className="text-center text-white flex flex-col gap-12 max-w-4xl">
+          <p className="text-lg md:text-3xl font-normal leading-relaxed md:text-left text-left">
+            Mais que um evento, o{" "}
+            <span className="text-[#eb9f1b]">
+              <strong>Yellow Summit</strong>
+            </span>{" "}
+            é uma experiência: credenciamento por reconhecimento facial,
+            estrutura moderna, espaço de interação e momentos para gerar
+            conexões que <strong>podem mudar o futuro do seu negócio</strong>
           </p>
         </div>
-        <div className="relative flex flex-col md:flex-row gap-4 px-6 md:px-12 max-w-8xl items-center justify-center">
+        <div className="relative flex flex-col md:flex-row gap-16 items-center justify-center">
           {pessoas.map((pessoa, index) => (
             <div key={index} className="w-full">
               <Image

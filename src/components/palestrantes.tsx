@@ -1,15 +1,12 @@
 import Image from "next/image";
 import Card from "./Card";
 
-const pessoas = [
-  { src: "/images/elementos/Pessoas (1).png", alt: "Diretora comercial" },
-  { src: "/images/elementos/Pessoas (2).png", alt: "Diretor de marketing" },
-  { src: "/images/elementos/Pessoas (3).png", alt: "CEO e Cofundador - build" },
-];
-
 const Beneficios = () => {
   return (
-    <section className="relative w-full min-h-screen py-24 md:py-32 flex flex-col items-center justify-center">
+    <section className="relative w-full min-h-screen py-24 flex flex-col items-center justify-center gap-16">
+      <h2 className="text-4xl md:text-6xl text-[#eb9f1b] font-bold">
+        Nossos palestrantes
+      </h2>
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/backgrounds/BG 6.png"
@@ -20,7 +17,7 @@ const Beneficios = () => {
           className="object-cover"
         />
       </div>
-      <Card/>
+      <Card />
     </section>
   );
 };

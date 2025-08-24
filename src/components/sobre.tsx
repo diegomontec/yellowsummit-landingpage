@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Sobre = () => {
   return (
-    <section className="relative w-full min-h-[70vh] md:h-screen  flex flex-col items-center justify-center">
+    <section className="relative w-full h-screen flex flex-col items-center justify-center">
       <Image
         src="/images/backgrounds/BG 2.png"
         alt="Plano de fundo da seção sobre o evento"
@@ -15,7 +15,8 @@ const Sobre = () => {
         <div className="text-center text-[#0c0c0b] flex flex-col gap-12 max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold">Sobre o evento</h2>
           <p className="text-lg md:text-2xl font-normal leading-relaxed text-left">
-            Na sua 2ª edição, o <strong>Yellow Summit</strong> reúne empresários e profissionais para explorar como fortalecimento de marca,
+            Na sua 2ª edição, o <strong>Yellow Summit</strong> reúne empresários
+            e profissionais para explorar como fortalecimento de marca,
             comunicação integrada e estratégia digital estão transformando
             negócios no Brasil. É um dia de{" "}
             <strong>aprendizado, conexões e inovação</strong> no Centro de
