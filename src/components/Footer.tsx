@@ -1,12 +1,6 @@
-'use client';
-
 import Image from "next/image";
 
 const Footer = () => {
-  const handleClick = (url: string) => {
-    window.location.href = url;
-  };
-
   return (
     <section className="relative w-full md:h-screen py-24 flex flex-col items-center justify-center">
       <Image
@@ -37,12 +31,14 @@ const Footer = () => {
           Você vai ficar de fora?
         </p>
 
-        <button
+        <a
           className="px-8 py-4 border-2 border-black bg-[#0c0c0b] text-[#eb9f1b] text-base sm:text-xl md:text-2xl font-bold rounded-full hover:bg-[#2c2525] cursor-pointer transition-colors duration-300"
-          onClick={() => handleClick("https://www.sympla.com.br/")}
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.sympla.com.br/evento/yellow-summit-2025/3084245?=&utm_source=facebook-ads&utm_medium=02%20%7C%20ALL%20%7C%20ADVANTAGE%2B%20%7C%2024-50%20%7C%20Macei%C3%B3&utm_content=0001%20%7C%20EST%20%7C%20Card%20inicial&utm_campaign=YK%20%20%7C%20VENDAS%20%7C%2001%20%7C%20Yellow%20Summit%20%7C%202025-08-22&utm_term=Instagram_Feed&utm_id=120235101190510029&fbclid=PAZXh0bgNhZW0BMABhZGlkAaspMbmq4K0Bp4XK3iYTLZe13ZooEaprJm5HQU-LqGYlityvRzswgBZts9Xh4Y8UwMmGd0gx_aem__YPyFFslKTjC5l3ZTU7YWg&referrer=instagram.com"
         >
           Compre seu ingresso agora no Sympla
-        </button>
+        </a>
       </div>
     </section>
   );
