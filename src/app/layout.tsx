@@ -1,41 +1,60 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
-
 export const metadata: Metadata = {
-  title: "Yellow Summit 2025",
-  description:
-    "Na sua 2ª edição, o Yellow Summit reúne empresários e profissionais para explorar como fortalecimento de marca, comunicação integrada e estratégia digital estão transformando negócios no Brasil. É um dia de aprendizado, conexões e inovação no Centro de Inovação de Alagoas.",
-  icons: {
-    icon: "https://yellowkite.com.br/assets/icons/logo-kite.svg",
-  },
   openGraph: {
-    title: "Yellow Summit - 2025",
+    title: "Yellow Summit 2025 - Construa o futuro hoje",
     description:
-      "Um dia inteiro de aprendizado, conexões e inovação no Centro de Inovação de Alagoas.",
-    url: "https://yellowsummit.com.br",
-    siteName: "Yellow Summit 2025",
+      "O maior evento para quem quer transformar ideias em resultados. 🚀",
+    type: "website",
     images: [
       {
         url: "https://yellowkite.com.br/yellowsummit/index.html",
         width: 1200,
         height: 630,
-        alt: "Yellow Summit 2025 - O maior evento de inovação e negócios do Nordeste",
+        alt: "Yellow Summit 2025 - Construa o futuro hoje",
       },
     ],
-    locale: "pt_BR",
-    type: "website",
   },
-}
+};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <head>
+        {/* Google Tag Manager (Script principal) */}
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-WV7N2M8');
+            `,
+          }}
+        />
+      </head>
+      <body>
+        {/* Google Tag Manager (noScript fallback) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WV7N2M8"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+
+        {children}
+      </body>
     </html>
   );
 }
