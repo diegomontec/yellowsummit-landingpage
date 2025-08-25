@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Beneficios = () => {
   return (
-    <section className="relative w-full min:h-screen py-32 flex flex-col items-center justify-center">
+    <section className="relative w-full md:h-screen py-24 flex flex-col items-center justify-center">
       <Image
         src="/images/backgrounds/BG 3.png"
         alt="Plano de fundo da seção sobre o evento"
@@ -18,7 +18,7 @@ const Beneficios = () => {
           width={1154}
           height={721}
           priority
-          className="w-full max-w-4xl"
+          className="w-full max-w-5xl"
         />
       </div>
     </section>

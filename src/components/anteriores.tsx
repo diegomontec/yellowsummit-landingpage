@@ -17,7 +17,7 @@ const pessoas = [
 
 const Anteriores = () => {
   return (
-    <section className="relative w-full min:h-screen py-24 flex flex-col items-center justify-center">
+    <section className="relative w-full md:h-screen py-24 flex flex-col items-center justify-center">
       <Image
         src="/images/backgrounds/BG 5.png"
         alt="Plano de fundo da seção sobre o evento"
@@ -26,9 +26,9 @@ const Anteriores = () => {
         className="object-cover"
       />
 
-      <div className="relative flex flex-col items-center justify-center px-8 md:px-12 w-full gap-24">
+      <div className="relative flex flex-col items-center justify-center px-8 md:px-12 w-full gap-16">
         <div className="text-center text-white flex flex-col gap-12 max-w-4xl">
-          <p className="text-lg md:text-3xl font-normal leading-relaxed md:text-left text-left">
+          <p className="text-lg md:text-3xl font-normal leading-relaxed md:text-center text-left">
             Mais que um evento, o{" "}
             <span className="text-[#eb9f1b]">
               <strong>Yellow Summit</strong>

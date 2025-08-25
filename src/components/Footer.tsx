@@ -1,8 +1,14 @@
+'use client';
+
 import Image from "next/image";
 
 const Footer = () => {
+  const handleClick = (url: string) => {
+    window.location.href = url;
+  };
+
   return (
-    <section className="relative w-full min-h-[70vh] md:min-h-screen py-12 md:py-24 flex flex-col items-center justify-center">
+    <section className="relative w-full md:h-screen py-24 flex flex-col items-center justify-center">
       <Image
         src="/images/backgrounds/BG 8.png"
         alt="Plano de fundo da seção sobre o evento"
@@ -31,7 +37,10 @@ const Footer = () => {
           Você vai ficar de fora?
         </p>
 
-        <button className="px-6 sm:px-8 py-2 sm:py-4 border-2 border-black bg-[#eb9f1b] text-[#0c0c0b] text-base sm:text-xl md:text-2xl font-bold rounded-full hover:bg-[#f1af3b] cursor-pointer transition-colors duration-300">
+        <button
+          className="px-8 py-4 border-2 border-black bg-[#0c0c0b] text-[#eb9f1b] text-base sm:text-xl md:text-2xl font-bold rounded-full hover:bg-[#2c2525] cursor-pointer transition-colors duration-300"
+          onClick={() => handleClick("https://www.sympla.com.br/")}
+        >
           Compre seu ingresso agora no Sympla
         </button>
       </div>

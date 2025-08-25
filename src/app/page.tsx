@@ -17,8 +17,8 @@ export default function Home() {
         <Palestrantes />
         <Anteriores />
         <QTDParticipantes />
-        <GarantaIngresso/>
-        <Footer/>
+        <GarantaIngresso />
+        <Footer />
       </div>
     </main>
   );
