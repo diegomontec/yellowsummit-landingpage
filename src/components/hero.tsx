@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="relative w-full py-24">
+    <div className="relative w-full py-24 h-screen">
       <Image
         src="/images/backgrounds/BG 1.png"
         alt="Plano de fundo do herói"
@@ -16,10 +16,10 @@ export default function Hero() {
 
       <div className="relative flex flex-col items-center justify-center px-8 w-full h-full gap-16">
         <div className="text-center text-white">
-          <p className="text-3xl md:text-5xl font-extralight">
+          <p className="text-3xl md:text-4xl font-extralight">
             O futuro dos negócios
           </p>
-          <p className="text-4xl md:text-8xl font-bold">começa aqui</p>
+          <p className="text-3xl md:text-6xl font-bold">começa aqui</p>
         </div>
 
         <Image
@@ -34,11 +34,9 @@ export default function Hero() {
           className="w-full h-auto max-w-3xl"
         />
 
-        <div className="text-center text-white text-2xl md:text-4xl font-extralight">
-          <p className="max-w-3xl">
-            Um encontro para transformar sua forma de comunicar, inovar e
-            crescer no mercado!
-          </p>
+        <div className="text-center text-white text-2xl md:text-3xl gap-8 flex flex-col font-extralight">
+          <p className="max-w-3xl"> Um encontro para transformar sua forma de comunicar, inovar e crescer no mercado! </p>
+          <p>18/09/2025  |  14h às 19h  |  Centro de Inovações</p>
         </div>
 
         <a
