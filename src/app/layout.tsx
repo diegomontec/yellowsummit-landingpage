@@ -11,8 +11,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/elementos/preview.png",
-        width: 1200,
-        height: 630,
+        width: 1202,
+        height: 431,
         alt: "Yellow Summit 2025 - Construa o futuro hoje",
       },
     ],
