@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://yellowkite.com.br/yellowsummit/index.html",
+        url: "/images/elementos/preview.png",
         width: 1200,
         height: 630,
         alt: "Yellow Summit 2025 - Construa o futuro hoje",
