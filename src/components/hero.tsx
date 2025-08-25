@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="relative w-full py-24 h-screen">
+    <div className="relative w-full py-12 min-h-screen">
       <Image
         src="/images/backgrounds/BG 1.png"
         alt="Plano de fundo do herói"
@@ -41,7 +41,7 @@ export default function Hero() {
 
         <a
           className="mx-auto md:mx-0 px-8 py-4 bg-[#eb9f1b] text-[#0c0c0b] text-1xl md:text-2xl font-bold rounded-full hover:bg-yellow-400 transition-colors duration-300"
-          href="https://www.sympla.com.br/evento/yellow-summit-2025/3084245?=&utm_source=facebook-ads&utm_medium=02%20%7C%20ALL%20%7C%20ADVANTAGE%2B%20%7C%2024-50%20%7C%20Macei%C3%B3&utm_content=0001%20%7C%20EST%20%7C%20Card%20inicial&utm_campaign=YK%20%20%7C%20VENDAS%20%7C%2001%20%7C%20Yellow%20Summit%20%7C%202025-08-22&utm_term=Instagram_Feed&utm_id=120235101190510029&fbclid=PAZXh0bgNhZW0BMABhZGlkAaspMbmq4K0Bp4XK3iYTLZe13ZooEaprJm5HQU-LqGYlityvRzswgBZts9Xh4Y8UwMmGd0gx_aem__YPyFFslKTjC5l3ZTU7YWg&referrer=instagram.com"
+          href="https://www.sympla.com.br/evento/yellow-summit-2025/3084245"
           target="_blank"
           rel="noopener noreferrer"
         >
