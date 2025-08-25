@@ -13,10 +13,10 @@ export default function Home() {
       <div>
         <Hero />
         <Sobre />
-        <Beneficios />
+        {/* <Beneficios /> */}
         <Palestrantes />
         <Anteriores />
-        <QTDParticipantes />
+        {/* <QTDParticipantes /> */}
         <GarantaIngresso />
         <Footer />
       </div>

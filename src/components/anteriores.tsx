@@ -17,7 +17,7 @@ const pessoas = [
 
 const Anteriores = () => {
   return (
-    <section className="relative w-full md:h-screen py-24 flex flex-col items-center justify-center">
+    <section className="relative w-full  py-24 flex flex-col items-center justify-center">
       <Image
         src="/images/backgrounds/BG 5.png"
         alt="Plano de fundo da seção sobre o evento"

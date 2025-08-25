@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const GarantaIngresso = () => {
     return (
-      <section className="relative w-full py-24 px-8 md:h-screen flex flex-col items-center justify-center">
+      <section className="relative w-full py-42 px-8 flex flex-col items-center justify-center">
         <Image
           src="/images/backgrounds/BG 7.png"
           alt="Plano de fundo da seção sobre o evento"
