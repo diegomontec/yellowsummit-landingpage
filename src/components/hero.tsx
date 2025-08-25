@@ -36,7 +36,7 @@ export default function Hero() {
 
         <div className="text-center text-white text-2xl md:text-3xl gap-8 flex flex-col font-extralight">
           <p className="max-w-3xl"> Um encontro para transformar sua forma de comunicar, inovar e crescer no mercado! </p>
-          <p>18/09/2025  |  14h às 19h  |  Centro de Inovações</p>
+          <p>18/09/2025  -  14h às 19h  -  Centro de Inovações</p>
         </div>
 
         <a
