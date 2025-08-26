@@ -3,10 +3,14 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  title: "Yellow Summit 2025",
+  description: "O maior evento para quem quer transformar ideias em resultados. 🚀",
+  icons: {
+    icon: "https://i.ibb.co/rGbTJZG/Design-sem-nome-3.png",
+  },
   openGraph: {
     title: "Yellow Summit 2025 - Construa o futuro hoje",
-    description:
-      "O maior evento para quem quer transformar ideias em resultados. 🚀",
+    description: "O maior evento para quem quer transformar ideias em resultados. 🚀",
     type: "website",
     images: [
       {
@@ -31,7 +35,6 @@ export default function RootLayout({
           name="facebook-domain-verification"
           content="q7khp9babuwjsab8yor9w2oi9mtm05"
         />
-
         {/* Google Tag Manager (Script principal) */}
         <Script
           id="gtm-script"
@@ -55,7 +58,7 @@ export default function RootLayout({
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
+          />
         </noscript>
 
         {children}
